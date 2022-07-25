@@ -11,4 +11,11 @@
 #backgroundBody{
     background-color: bisque;
 }
-            
+
+.Body{
+    font-family: Arial;
+}
+
+.smallBody{
+    font-family: Arial;
+}
