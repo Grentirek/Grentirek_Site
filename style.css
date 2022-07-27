@@ -1,19 +1,77 @@
+@font-face {
+    font-family: 'Consolas';
+    src: url(Consolas.ttf);
+}
+
 #textBody {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:rgb(16, 0, 107);
+    color:rgb(190, 180, 245);
   }
 #backgroundBody{
-    background-color: bisque;
+    background-color: rgb(51, 44, 160);
 }
 
 .Body{
-    font-family: Arial;
+    font-family: 'Consolas';
 }
 
 .smallBody{
-    font-family: Arial;
+    font-family: 'Consolas';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.buttonBody{
+    text-align: center;
+    margin-top: 400px;
+}
+
+.btn{
+   border: 1px white;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Consolas';
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1, .btn2{
+    color: rgb(190, 180, 245);
+    font-family: 'Consolas';
+}
+
+.btn1:hover, .btn2:hover{
+    color: white;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(32, 25, 128);
+    z-index: -1;
+    transition: 0.8s;
+
+}
+
+.btn1::before, .btn2::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+
+}
+.btn1:hover::before, .btn2:hover::before{
+    height: 180%;
 }
